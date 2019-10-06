@@ -1,9 +1,10 @@
+//convert the input number into the letters
 #include<iostream>
 #include<string>
 using namespace std;
 
 
-
+//Add a string
 string addString(string str, string add)
 {
 	
@@ -24,6 +25,7 @@ string addString(string str, string add)
 	
 }
 
+//Convert the hundredth terms into the corresponding letters
 string hunDigToLetter(string str, int num)
 {
 	int r;
@@ -67,6 +69,7 @@ string hunDigToLetter(string str, int num)
 		return str;
 }
 
+//Convert the ones term into corresponding letters
 string onesDigToLetter(string str, int num)
 {
 	int r;
@@ -150,7 +153,7 @@ string onesDigToLetter(string str, int num)
 				
 }
 
-
+//Convert the tens term into corresponding letters
 string tensDigToLetter(string str, int num)
 {
 	int r;
@@ -193,7 +196,7 @@ int main ()
 	string str="";
 	cout<<"Enter the number to convert it into English but the number must be less than 1 billion:\n";
 	cin>>num;
-	if(num<1000000000)
+	if(num<1000000000)  //convert numbers less than 1 billion
 	{
 	
 	//	cout<<num;
